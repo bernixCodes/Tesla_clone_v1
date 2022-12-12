@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Fade from "react-reveal/Fade";
+import { Slide, Fade } from "react-awesome-reveal";
 
 function Card({
   title,
@@ -12,14 +12,14 @@ function Card({
   return (
     // background-image: url("/images/model-s.jpg");
     <Wrap bgImage={backgroundImg}>
-      <Fade bottom>
+      <Fade direction="down">
         <ItemText>
           <h1>{title}</h1>
           <p>{description}</p>
         </ItemText>
       </Fade>
       <Buttons>
-        <Fade bottom>
+        <Fade direction="down">
           <ButtonGroup>
             <LeftButton>{leftBtnText}</LeftButton>
             <RightButton>{RightBtnText}</RightButton>
